@@ -1,13 +1,19 @@
 <template>
-  <v-footer class="text-center d-flex flex-column" color="primary" >
+  <v-footer class="text-center d-flex flex-column" color="primary">
     <div>
       <!-- redirect to href -->
-      <v-btn v-for="item in items" :key="item.icon" class="mx-4" :icon="item.icon" variant="text" :href="item.href" target="_blank"></v-btn>
+      <v-btn
+        v-for="item in items"
+        :key="item.icon"
+        class="mx-4"
+        :icon="item.icon"
+        variant="text"
+        :href="item.href"
+        target="_blank"
+      ></v-btn>
     </div>
 
-    <div class="pt-0">
-      {{ randomQuote?.content }} — {{ randomQuote?.author }}
-    </div>
+    <div class="pt-0">{{ randomQuote?.content }} — {{ randomQuote?.author }}</div>
 
     <v-divider></v-divider>
 

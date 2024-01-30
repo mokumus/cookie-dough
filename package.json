@@ -8,10 +8,12 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lintfix": "prettier --write --ignore-path .gitignore \"**/*.{js,ts,vue}\""
+    "lintfix": "prettier --write --ignore-path .gitignore \"**/*.{js,ts,vue}\"",
+    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public"
   },
   "devDependencies": {
     "@nuxtjs/i18n": "^8.0.0",
+    "gh-pages": "^6.1.1",
     "nuxt": "^3.9.3",
     "prettier": "3.2.4",
     "vite-plugin-vuetify": "^2.0.1",

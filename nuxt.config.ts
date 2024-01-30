@@ -1,6 +1,11 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
+  ssr: false,
+  app: {
+    baseURL: '/cookie-dough/', // baseURL: '/<repository>/'
+    buildAssetsDir: 'public/assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
+  },
   devtools: { enabled: true },
   build: {
     transpile: ['vuetify'],
@@ -15,7 +20,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
   ],
   i18n: {
-    vueI18n: './i18n.config.ts' // if you are using custom path, default 
+    vueI18n: './i18n.config.ts', // if you are using custom path, default
   },
   vite: {
     vue: {

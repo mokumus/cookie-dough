@@ -15,18 +15,17 @@ export default defineNuxtPlugin((app) => {
           dark: false,
           colors: {
             primary: colors.green.darken1,
-            secondary: colors.green.lighten4, 
-          }
+            secondary: colors.green.lighten4,
+          },
         },
         dark: {
           dark: true,
           colors: {
-            primary: '#171717', 
-            secondary: '#DD2C00', 
-          }
+            primary: '#171717',
+            secondary: '#DD2C00',
+          },
         },
       },
-  
     },
   })
   app.vueApp.use(vuetify)
