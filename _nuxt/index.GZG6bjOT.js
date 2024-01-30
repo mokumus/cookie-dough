@@ -1,0 +1,1 @@
+import{d as a,L as o,t as r,v as s,z as e,A as t,B as n}from"./entry.3d2yxU6n.js";import{V as d,a as l}from"./VCard.c71uZ-c6.js";const f=a({__name:"index",setup(c){return o(),(i,p)=>(r(),s("div",null,[e(l,{color:"secondary",height:"800px",width:"100%"},{default:t(()=>[e(d,null,{default:t(()=>[n("Title")]),_:1})]),_:1})]))}});export{f as default};
