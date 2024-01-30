@@ -26,7 +26,7 @@ export default {
   data: () => ({
     items: [
       { icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/muhammed-okumu%C5%9F-26b5b71aa/' },
-      { icon: 'mdi-github', href: 'https://github.com/mokumus' },
+      { icon: 'mdi-github', href: 'https://github.com/mokumus/cookie-dough' },
     ],
     randomQuote: null,
   }),
