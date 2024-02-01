@@ -1,15 +1,15 @@
 <template>
-  <v-app-bar :elevation="2" color="primary">
+  <v-app-bar :elevation="2" app absolute="" color="primary">
     <template v-slot:append>
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
       <v-btn
         :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
         @click="$emit('updateTheme')"
       ></v-btn>
-      <LanguageSelector></LanguageSelector>
+      <!-- <LanguageSelector/> -->
     </template>
 
-    <v-app-bar-title>{{ $t('title') }}</v-app-bar-title>
+    <v-app-bar-title class="font-weight-bold">{{ $t('title') }}</v-app-bar-title>
   </v-app-bar>
 </template>
 
