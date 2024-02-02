@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar :elevation="2" app absolute="" color="primary">
+  <v-app-bar :elevation="2" app density="compact" absolute color="primary">
     <template v-slot:append>
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
       <v-btn

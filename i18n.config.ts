@@ -4,11 +4,11 @@ export default defineI18nConfig(() => ({
   messages: {
     en: {
       welcome: 'Welcome',
-      title: 'Cookie Dough',
+      title: '',
     },
     tr: {
       welcome: 'Hoş geldiniz',
-      title: 'Kurabiye Hamuru',
+      title: '',
     },
   },
 }))

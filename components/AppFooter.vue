@@ -14,7 +14,7 @@
     </div>
     <v-divider></v-divider>
 
-    <div>{{ new Date().getFullYear() }} — <strong>Vuetify</strong></div>
+    <div>{{ new Date().getFullYear() }} — <strong>mokumus</strong></div>
   </v-footer>
 </template>
 
