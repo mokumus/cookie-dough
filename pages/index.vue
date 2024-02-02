@@ -10,10 +10,13 @@
         <v-btn color="primary" text @click="fetchRandomQuranVerse">Random Hadith</v-btn>
       </v-card-actions>
       </v-card>
+
+      <kutub-i-sitte></kutub-i-sitte>
   </div>
 </template>
 
 <script>
+
 export default {
   data: () => ({
     randomQuote: null,
