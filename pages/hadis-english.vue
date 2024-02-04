@@ -1,8 +1,8 @@
 <template>
   <v-container fluid fill-height>
-    <v-row justify="center" align="center">
+    <v-row class="pt-5" justify="center" align="center">
       <v-col cols="12">
-        <kutub-i-sitte></kutub-i-sitte>
+        <external-hadith></external-hadith>
       </v-col>
     </v-row>
   </v-container>

@@ -32,12 +32,10 @@ export default {
   mounted() {
     //watch window width
     window.addEventListener('resize', this.handleResize)
-
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.handleResize)
   },
-
 
   computed: {
     color() {
@@ -51,10 +49,9 @@ export default {
     customClass() {
       // center if arabic, right if turkish and isMobile
       // return this.isMobile ? this.lang === 'ar' ? 'text-center' : 'text-left' : 'text-left'
-      if(this.isMobile) {
-        return this.lang==='ar' ? 'text-center' : 'text-left'
-      }
-      else {
+      if (this.isMobile) {
+        return this.lang === 'ar' ? 'text-center' : 'text-left'
+      } else {
         return this.lang === 'ar' ? 'text-center' : 'text-center'
       }
     },
@@ -63,14 +60,13 @@ export default {
       // bigger if arabic
       // both small on mobile
       return this.lang === 'ar' ? '44px' : '20px'
-    }
+    },
   },
 
   methods: {
     handleResize() {
-      console.log('resize')
       this.isMobile = window.innerWidth < 960
-    }
-  }
+    },
+  },
 }
 </script>

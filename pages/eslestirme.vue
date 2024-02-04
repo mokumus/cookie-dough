@@ -4,26 +4,38 @@
       <v-col cols="6">
         <v-item-group :selected-class="'bg-primary'" v-model="selectionAr">
           <v-row v-for="item in shuffledSampleAr" :key="item.id" justify="end" align="end">
-          <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
-            <MatchCard :item="item" lang="ar" @click="toggle(), handleMatch(item.id, 'ar')" :class="['d-flex align-center', selectedClass]" :isSelected="isSelected" :isMatched="isMatched(item.id)"></MatchCard>
-          </v-item>
-        </v-row>
+            <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
+              <MatchCard
+                :item="item"
+                lang="ar"
+                @click="toggle(), handleMatch(item.id, 'ar')"
+                :class="['d-flex align-center', selectedClass]"
+                :isSelected="isSelected"
+                :isMatched="isMatched(item.id)"
+              ></MatchCard>
+            </v-item>
+          </v-row>
         </v-item-group>
-
       </v-col>
       <v-col cols="6">
         <v-item-group selected-class="bg-primary" v-model="selectionTr">
           <v-row v-for="item in shuffledSampleTr" :key="item.id" justify="start" align="start">
             <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
-              <MatchCard :item="item" lang="tr" @click="toggle(), handleMatch(item.id, 'tr')" :class="['d-flex align-center', selectedClass]" :isSelected="isSelected" :isMatched="isMatched(item.id)"></MatchCard>
+              <MatchCard
+                :item="item"
+                lang="tr"
+                @click="toggle(), handleMatch(item.id, 'tr')"
+                :class="['d-flex align-center', selectedClass]"
+                :isSelected="isSelected"
+                :isMatched="isMatched(item.id)"
+              ></MatchCard>
             </v-item>
           </v-row>
         </v-item-group>
       </v-col>
-
     </v-row>
     <v-row class="mt-5" justify="center" align="center">
-        <v-btn color="primary" size="large"  @click="shuffle">Yenile</v-btn>
+      <v-btn color="primary" size="large" @click="shuffle">Yenile</v-btn>
     </v-row>
   </v-container>
 </template>
@@ -69,25 +81,22 @@ export default defineComponent({
 
       if (this.itemTr && this.itemAr) {
         if (this.itemTr === this.itemAr) {
-          console.log('Matched', this.itemTr, this.itemAr)
           this.currentMatches.push(this.itemTr)
           //  CLEAR SELECTED ITEMS
           this.selectionTr = null
           this.selectionAr = null
-          
         } else {
-          console.log('Not matched', this.itemTr, this.itemAr)
           this.itemTr = null
-      this.itemAr = null
-      this.selectionTr = null
-      this.selectionAr = null
+          this.itemAr = null
+          this.selectionTr = null
+          this.selectionAr = null
         }
       }
     },
 
-    isMatched(id){
+    isMatched(id) {
       return this.currentMatches.includes(id)
-    }
+    },
   },
 })
 </script>

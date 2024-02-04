@@ -28,7 +28,7 @@ export default defineNuxtConfig({
       template: {
         transformAssetUrls,
       },
-    },  
+    },
     build: {
       minify: 'terser', // <-- add
       terserOptions: {
