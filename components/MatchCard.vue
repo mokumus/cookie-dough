@@ -45,7 +45,7 @@ export default {
     },
 
     height() {
-      return this.isMobile ? '60' : '120'
+      return this.isMobile ? '120' : '120'
     },
 
     customClass() {
@@ -62,12 +62,7 @@ export default {
     fontSize() {
       // bigger if arabic
       // both small on mobile
-      if(this.isMobile) {
-        return this.lang==='ar' ? '24px' : '10px'
-      }
-      else {
-        return this.lang === 'ar' ? '44px' : '20px'
-      }
+      return this.lang === 'ar' ? '44px' : '20px'
     }
   },
 
