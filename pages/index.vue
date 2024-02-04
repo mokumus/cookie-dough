@@ -1,16 +1,26 @@
 <template>
   <v-container fluid fill-height>
-    <v-row justify="center" align="center">
-      <v-col cols="12">
-        <kutub-i-sitte></kutub-i-sitte>
+    <v-row>
+      <v-col>
+        <v-card elevation="10" to="/hadis" height="150">
+          <v-card-title>
+            <h2 class="text-h5">Hadisler</h2>
+          </v-card-title>
+          <v-card-text>
+            <p>İmam Buhari, İmam Müslim, Ebu Davud, Tirmizi, Nesai, İbn Mace</p>
+          </v-card-text>
+        </v-card>
       </v-col>
-     
-    </v-row>
-    <v-row class="pt-5" justify="center" align="center"> 
-      <v-col cols="12">
-        <external-hadith></external-hadith>
+      <v-col>
+        <v-card elevation="10" to="/eslestirme" height="150">
+          <v-card-title>
+            <h2 class="text-h5">Eşleştirme</h2>
+          </v-card-title>
+          <v-card-text>
+            <p>Arapça alıştırma</p>
+          </v-card-text>
+        </v-card>
       </v-col>
-      
     </v-row>
     
     
@@ -20,17 +30,11 @@
 <script>
 export default {
   data: () => ({
-    randomQuote: null,
   }),
   mounted() {
-    this.randomQuote = this.fetchQuote()
   },
 
   methods: {
-    async fetchQuote() {
-      const response = await fetch('https://api.quotable.io/random')
-      this.randomQuote = await response.json()
-    },
   },
 }
 </script>

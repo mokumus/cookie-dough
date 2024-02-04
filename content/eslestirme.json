@@ -1,0 +1,108 @@
+[
+  {
+    "tr": "Yardım etti",
+    "ar": "نَصَرَ",
+    "id": 1
+  },
+  {
+    "tr": "Yardım ediyor,edecek,eder",
+    "ar": "يَنْصُرُ",
+    "id": 2
+  },
+  {
+    "tr": "Yardım etmek",
+    "ar":"نَصْرًا",
+    "id": 3
+  },
+  { "tr": "Yardım eden",
+    "ar": "نَاصِرٌ",
+    "id": 4
+  },
+  { "tr": "Yardım olunan",
+    "ar": "مَنْصُورٌ",
+    "id": 5
+  },
+  { "tr":"Yardım etmedi",
+    "ar":"لَمْيَنْصُرْ",
+    "id":6
+  },
+  { "tr":"Henüz yardım etmedi",
+    "ar":"لَمَّيَنْصُرْ",
+    "id":7
+  },
+  { "tr":"Yardım etmiyor",
+    "ar":"مَايَنْصُرُ",
+    "id":8
+  },
+  { "tr":"Yardım etmeyecek",
+    "ar":"لَيَنْصُرُ",
+    "id":9
+  },
+  { "tr":"Elbette yardım etmeyecek",
+    "ar":"لَنْيَنْصُرَ",
+    "id":10
+  },
+  { "tr":"Yardım etsin",
+    "ar":"لِيَنْصُرْ",
+    "id":11
+  },
+  { "tr":"Yardım etmesin",
+    "ar":"لَيَنْصُر",
+    "id":12
+  },
+  { "tr":"Yardım et",
+    "ar":"اُنْصُرْ",
+    "id":13
+  },
+  { "tr":"Yardım etme",
+    "ar":"لاَتَنْصُرْ",
+    "id": 14
+  },
+  { "tr":"Yardım etme mekanı,yardım etme zamanı,yardım etmek",
+    "ar":"مَنْصَرُنٌ",
+    "id":15   
+  },
+  { "tr":"Yardım aleti",
+    "ar":"مِنْصَرُنٌ",
+    "id":16
+  },
+  { "tr":"Bir kere yardım etmek",
+    "ar":"نَصْرَةً",
+    "id":17
+  },
+  { "tr":"Bir türlü yardım etmek",
+    "ar":"نِصْرَةً",
+    "id":18
+  },
+  { "tr":"Yardım etmecik",
+    "ar":"نُصَيْرٌ",
+    "id":19
+  },
+  { "tr":"Yardıma mensup",
+    "ar":"نَصْرِىٌّ ",
+    "id":20
+  },
+  { "tr":"Çok çok yardım eden",
+    "ar":"نَصّارٌ ",
+    "id":21
+  },
+  { "tr":"Ziyade yardım edici",
+    "ar":"اَنْصَرُ ",
+    "id":22
+  },
+  { "tr":"Acayip yardım etti",
+    "ar":"مَا اَنْصَرَهُ ",
+    "id":23
+  },
+  { "tr":"Ne acayip yardım etti",
+    "ar":"وَاَنْصِرْ بِهِ ",
+    "id":24
+  }
+]
+
+
+
+
+
+
+

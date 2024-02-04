@@ -28,6 +28,15 @@ export default defineNuxtConfig({
       template: {
         transformAssetUrls,
       },
+    },  
+    build: {
+      minify: 'terser', // <-- add
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        },
+      },
     },
   },
   runtimeConfig: {
