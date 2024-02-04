@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="6">
         <v-item-group selected-class="bg-primary" v-model="selectionTr">
-          <v-row v-for="item in shuffledSampleTr" :key="item.id">
+          <v-row v-for="item in shuffledSampleTr" :key="item.id" justify="end" align="end">
             <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
               <MatchCard :item="item" lang="tr" @click="toggle(), handleMatch(item.id, 'tr')" :class="['d-flex align-center', selectedClass]" :isSelected="isSelected" :isMatched="isMatched(item.id)"></MatchCard>
             </v-item>
@@ -12,7 +12,7 @@
       </v-col>
       <v-col cols="6">
         <v-item-group :selected-class="'bg-primary'" v-model="selectionAr">
-          <v-row v-for="item in shuffledSampleAr" :key="item.id">
+          <v-row v-for="item in shuffledSampleAr" :key="item.id" justify="start" align="start">
           <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
             <MatchCard :item="item" lang="ar" @click="toggle(), handleMatch(item.id, 'ar')" :class="['d-flex align-center', selectedClass]" :isSelected="isSelected" :isMatched="isMatched(item.id)"></MatchCard>
           </v-item>

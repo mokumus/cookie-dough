@@ -1,7 +1,7 @@
 <template>
-  <v-card class="ma-2" height="60" width="400" :color="color">
+  <v-card class="ma-2" :height="height" width="400" :color="color">
     <v-card-text>
-      <h2 class="text-bold text-center" :style="`font-size: ${fontSize}`">{{ item[lang] }}</h2>
+      <p :class="customClass" :style="`font-size: ${fontSize}`">{{ item[lang] }}</p>
     </v-card-text>
   </v-card>
 </template>
@@ -23,14 +23,59 @@ export default {
     },
   },
 
+  data() {
+    return {
+      isMobile: false,
+    }
+  },
+
+  mounted() {
+    //watch window width
+    window.addEventListener('resize', this.handleResize)
+
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+
+
   computed: {
     color() {
       return this.isMatched ? 'green' : 'yellow'
     },
+
+    height() {
+      return this.isMobile ? '60' : '120'
+    },
+
+    customClass() {
+      // center if arabic, right if turkish and isMobile
+      // return this.isMobile ? this.lang === 'ar' ? 'text-center' : 'text-left' : 'text-left'
+      if(this.isMobile) {
+        return this.lang==='ar' ? 'text-center' : 'text-left'
+      }
+      else {
+        return this.lang === 'ar' ? 'text-center' : 'text-center'
+      }
+    },
+
     fontSize() {
-      //bigger if arabic
-      return this.lang === 'ar' ? '44px' : '20px'
+      // bigger if arabic
+      // both small on mobile
+      if(this.isMobile) {
+        return this.lang==='ar' ? '24px' : '10px'
+      }
+      else {
+        return this.lang === 'ar' ? '44px' : '20px'
+      }
     }
   },
+
+  methods: {
+    handleResize() {
+      console.log('resize')
+      this.isMobile = window.innerWidth < 960
+    }
+  }
 }
 </script>
