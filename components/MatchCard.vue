@@ -1,7 +1,7 @@
 <template>
   <v-card class="ma-2" :height="height" width="400" :color="color">
-    <v-card-text>
-      <p :class="customClass" :style="`font-size: ${fontSize}`">{{ item[lang] }}</p>
+    <v-card-text :class="customClass" :style="`font-size: ${fontSize}`">
+      {{ item[lang] }}
     </v-card-text>
   </v-card>
 </template>
@@ -43,23 +43,23 @@ export default {
     },
 
     height() {
-      return this.isMobile ? '120' : '120'
+      return this.isMobile ? '90' : '90'
     },
 
     customClass() {
       // center if arabic, right if turkish and isMobile
       // return this.isMobile ? this.lang === 'ar' ? 'text-center' : 'text-left' : 'text-left'
       if (this.isMobile) {
-        return this.lang === 'ar' ? 'text-center' : 'text-left'
+        return this.lang === 'ar' ? 'text-center' : 'text-left font-weight-medium"'
       } else {
-        return this.lang === 'ar' ? 'text-center' : 'text-center'
+        return this.lang === 'ar' ? 'text-center' : 'text-center font-weight-medium"'
       }
     },
 
     fontSize() {
       // bigger if arabic
       // both small on mobile
-      return this.lang === 'ar' ? '44px' : '20px'
+      return this.lang === 'ar' ? '36px' : '14px'
     },
   },
 
