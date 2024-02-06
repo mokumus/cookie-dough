@@ -1,18 +1,11 @@
 <template>
   <v-container fluid fill-height>
+    <v-defaults-provider
+  :defaults="{'VCard':{'color':'indexCard', 'elevation': '10', 'height':'150'}}"
+>
     <v-row>
       <v-col>
-        <v-card elevation="10" to="/hadis" height="150">
-          <v-card-title>
-            <h2 class="text-h5">Hadisler</h2>
-          </v-card-title>
-          <v-card-text>
-            <p>Kütüb-i Sitte</p>
-          </v-card-text>
-        </v-card>
-      </v-col>
-      <v-col>
-        <v-card elevation="10" to="/eslestirme" height="150">
+        <v-card  to="/eslestirme" >
           <v-card-title>
             <h2 class="text-h5">Emsile (Fiil Eşleştirme)</h2>
           </v-card-title>
@@ -21,10 +14,19 @@
           </v-card-text>
         </v-card>
       </v-col>
-    </v-row>
-    <v-row>
       <v-col>
-        <v-card elevation="10" to="/hadis-english" height="150">
+        <v-card to="/hadis" >
+          <v-card-title>
+            <h2 class="text-h5">Hadisler</h2>
+          </v-card-title>
+          <v-card-text>
+            <p>Kütüb-i Sitte</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col>
+        <v-card  to="/hadis-english" >
           <v-card-title>
             <h2 class="text-h5">İngilizce Hadis</h2>
           </v-card-title>
@@ -34,6 +36,7 @@
         </v-card>
       </v-col>
     </v-row>
+  </v-defaults-provider>
   </v-container>
 </template>
 

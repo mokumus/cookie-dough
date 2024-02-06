@@ -4,11 +4,11 @@
       <v-col cols="6">
         <v-item-group :selected-class="'selected-match-card'" v-model="selectionAr">
           <v-row v-for="item in shuffledSampleAr" :key="item.id" justify="end" align="end">
-            <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)" >
+            <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
               <MatchCard
                 :item="item"
                 lang="ar"
-                @click="toggle(), handleMatch(item.id, 'ar'), playSound('nasara',item.id)"
+                @click="toggle(), handleMatch(item.id, 'ar'), playSound('nasara', item.id)"
                 :class="['d-flex align-center', selectedClass]"
                 :isSelected="isSelected"
                 :isMatched="isMatched(item.id)"
@@ -96,17 +96,16 @@ export default defineComponent({
       this.selectionTr = null
       this.selectionAr = null
     },
-    playSound(path,id) {
+    playSound(path, id) {
       // sounds under public/sounds/path and named as id_*.wav
       const audio = new Audio(`https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.wav`)
       audio.play()
-
     },
   },
 })
 </script>
 <style scoped>
 .selected-match-card {
-  background-color: #C5E1A5 !important;
+  background-color: #c5e1a5 !important;
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
-  <v-card color="secondary" elevation="10" class="mx-auto">
+  <v-card color="secondary" elevation="10" class="mx-auto" :loading="!randomHadith">
+    <!-- loading centered progress -->
+    
     <v-card-title class="text-wrap">{{ randomHadith?.book }}<br />{{ randomHadith?.bookName }}</v-card-title>
     <v-card-subtitle class="text-wrap">{{ randomHadith?.chapterName }}</v-card-subtitle>
     <v-card-subtitle class="text-wrap">{{ randomHadith?.header }}</v-card-subtitle>

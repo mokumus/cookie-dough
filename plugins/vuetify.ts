@@ -17,7 +17,9 @@ export default defineNuxtPlugin((app) => {
             primary: colors.green.darken1,
             secondary: colors.green.lighten4,
             button: '#365EB5',
-            matchcard: '#0288D1'
+            matchcard: '#0288D1',
+            background: '#C8E6C9',
+            indexCard: '#81C784',
           },
         },
         dark: {
@@ -26,7 +28,9 @@ export default defineNuxtPlugin((app) => {
             primary: '#01579B',
             secondary: '#0D47A1',
             button: '#ffffff',
-            matchcard: '#0288D1'
+            matchcard: '#0288D1',
+            background: '#212121', 
+            indexCard: '#0288D1',
           },
         },
       },

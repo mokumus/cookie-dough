@@ -27,15 +27,5 @@ export default {
     ],
     randomQuote: null,
   }),
-  mounted() {
-    this.randomQuote = this.fetchQuote()
-  },
-
-  methods: {
-    async fetchQuote() {
-      const response = await fetch('https://api.quotable.io/random')
-      this.randomQuote = await response.json()
-    },
-  },
 }
 </script>

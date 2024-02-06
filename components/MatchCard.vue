@@ -57,7 +57,7 @@ export default {
   text-overflow: ellipsis;
   font-size: 1.5rem;
   @media (max-width: 960px) {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 </style>
