@@ -29,14 +29,6 @@ export default {
     }
   },
 
-  mounted() {
-    //watch window width
-    window.addEventListener('resize', this.handleResize)
-  },
-  beforeDestroy() {
-    window.removeEventListener('resize', this.handleResize)
-  },
-
   computed: {
     color() {
       return this.isMatched ? 'green' : 'matchcard'
@@ -52,12 +44,6 @@ export default {
     // textAlign + fontSize
     classString() {
       return `${this.textAlign} ${this.fontSize}`
-    },
-  },
-
-  methods: {
-    handleResize() {
-      this.isMobile = window.innerWidth < 960
     },
   },
 }

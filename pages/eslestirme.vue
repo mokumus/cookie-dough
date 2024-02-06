@@ -99,8 +99,9 @@ export default defineComponent({
     playSound(path, id) {
       // sounds under public/sounds/path and named as id_*.wav
 
-      const audio = new Audio(`/sounds/${path}/${id}.wav`)
+      const audio = new Audio(`/${path}/${id}.wav`)
       audio.play()
+
     },
   },
 })
