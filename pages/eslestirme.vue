@@ -8,7 +8,7 @@
               <MatchCard
                 :item="item"
                 lang="ar"
-                @click="toggle(), handleMatch(item.id, 'ar'), playSound('nasran', item.id)"
+                @click="toggle(), handleMatch(item.id, 'ar'), playSound(item.id)"
                 :class="['d-flex align-center', selectedClass]"
                 :isSelected="isSelected"
                 :isMatched="isMatched(item.id)"
@@ -96,10 +96,9 @@ export default defineComponent({
       this.selectionTr = null
       this.selectionAr = null
     },
-    playSound(path, id) {
+    playSound(id) {
       // sounds under public/sounds/path and named as id_*.wav
-
-      const audio = new Audio(`/${path}/${id}.wav`)
+      const audio = new Audio(`/${id}.wav`)
       audio.play()
 
     },
