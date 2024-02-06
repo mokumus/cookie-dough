@@ -8,7 +8,7 @@
               <MatchCard
                 :item="item"
                 lang="ar"
-                @click="toggle(), handleMatch(item.id, 'ar'), playSound(item.id)"
+                @click="toggle(), handleMatch(item.id, 'ar'), playSound('nasara',item.id)"
                 :class="['d-flex align-center', selectedClass]"
                 :isSelected="isSelected"
                 :isMatched="isMatched(item.id)"
@@ -96,9 +96,9 @@ export default defineComponent({
       this.selectionTr = null
       this.selectionAr = null
     },
-    playSound(id) {
+    playSound(path,id) {
       // sounds under public/sounds/path and named as id_*.wav
-      const audio = new Audio(`https://github.com/mokumus/cookie-dough/raw/master/public/1.wav`)
+      const audio = new Audio(`https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.wav`)
       audio.play()
 
     },
