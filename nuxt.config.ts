@@ -4,8 +4,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     baseURL: '/cookie-dough/', // baseURL: '/<repository>/'
-    buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
-
+    buildAssetsDir: 'public', // don't use "_" at the begining of the folder name to avoids nojkill conflict
   },
   devtools: { enabled: true },
   build: {
