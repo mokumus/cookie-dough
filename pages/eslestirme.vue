@@ -98,7 +98,7 @@ export default defineComponent({
     },
     playSound(id) {
       // sounds under public/sounds/path and named as id_*.wav
-      const audio = new Audio(`/${id}.wav`)
+      const audio = new Audio(`https://github.com/mokumus/cookie-dough/raw/master/public/1.wav`)
       audio.play()
 
     },
