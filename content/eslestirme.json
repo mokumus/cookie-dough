@@ -1,108 +1,196 @@
-[
-  {
-    "tr": "Yardım etti",
-    "ar": "نَصَرَ",
-    "id": 1
-  },
-  {
-    "tr": "Yardım ediyor, edecek, eder",
-    "ar": "يَنْصُرُ",
-    "id": 2
-  },
-  {
-    "tr": "Yardım etmek",
-    "ar":"نَصْرًا",
-    "id": 3
-  },
-  { "tr": "Yardım eden",
-    "ar": "نَاصِرٌ",
-    "id": 4
-  },
-  { "tr": "Yardım olunan",
-    "ar": "مَنْصُورٌ",
-    "id": 5
-  },
-  { "tr":"Yardım etmedi",
-    "ar":"لَمْيَنْصُرْ",
-    "id":6
-  },
-  { "tr":"Henüz yardım etmedi",
-    "ar":"لَمَّيَنْصُرْ",
-    "id":7
-  },
-  { "tr":"Yardım etmiyor",
-    "ar":"مَايَنْصُرُ",
-    "id":8
-  },
-  { "tr":"Yardım etmeyecek",
-    "ar":"لَيَنْصُرُ",
-    "id":9
-  },
-  { "tr":"Elbette yardım etmeyecek",
-    "ar":"لَنْيَنْصُرَ",
-    "id":10
-  },
-  { "tr":"Yardım etsin",
-    "ar":"لِيَنْصُرْ",
-    "id":11
-  },
-  { "tr":"Yardım etmesin",
-    "ar":"لَيَنْصُر",
-    "id":12
-  },
-  { "tr":"Yardım et",
-    "ar":"اُنْصُرْ",
-    "id":13
-  },
-  { "tr":"Yardım etme",
-    "ar":"لاَتَنْصُرْ",
-    "id": 14
-  },
-  { "tr":"Yardım etme mekanı, yardım etme zamanı, yardım etmek",
-    "ar":"مَنْصَرُنٌ",
-    "id":15   
-  },
-  { "tr":"Yardım aleti",
-    "ar":"مِنْصَرُنٌ",
-    "id":16
-  },
-  { "tr":"Bir kere yardım etmek",
-    "ar":"نَصْرَةً",
-    "id":17
-  },
-  { "tr":"Bir türlü yardım etmek",
-    "ar":"نِصْرَةً",
-    "id":18
-  },
-  { "tr":"Yardım etmecik",
-    "ar":"نُصَيْرٌ",
-    "id":19
-  },
-  { "tr":"Yardıma mensup",
-    "ar":"نَصْرِىٌّ ",
-    "id":20
-  },
-  { "tr":"Çok çok yardım eden",
-    "ar":"نَصّارٌ ",
-    "id":21
-  },
-  { "tr":"Ziyade yardım edici",
-    "ar":"اَنْصَرُ ",
-    "id":22
-  },
-  { "tr":"Acayip yardım etti",
-    "ar":"مَا اَنْصَرَهُ ",
-    "id":23
-  },
-  { "tr":"Ne acayip yardım etti",
-    "ar":"وَاَنْصِرْ بِهِ ",
-    "id":24
-  }
-]
-
-
-
-
-
-
-
+{
+  "nasran": [
+    {
+      "id": 1,
+      "ar": "نَصَرَ",
+      "latin": "Nasara",
+      "siyga": "Fiilî Mazî",
+      "tr": "Yardım Etti",
+      "audio": "1_Nasara.wav"
+    },
+    {
+      "id": 2,
+      "ar": "يَنْصُرُ",
+      "latin": "Yensuru",
+      "siyga": "Fiilî Muzârî",
+      "tr": "Yardım Ediyor, Eder, Edecek",
+      "audio": "2_Yensuru.wav"
+    },
+    {
+      "id": 3,
+      "ar": "نَصْرًا",
+      "latin": "Nasran",
+      "siyga": "Mastar Gayrî Mîmî",
+      "tr": "Yardım Etme",
+      "audio": "3_Nasran.wav"
+    },
+    {
+      "id": 4,
+      "ar": "نَاصِرٌ",
+      "latin": "Nasîrun",
+      "siyga": "İsm-i Fâil",
+      "tr": "Yardım Edici / Eden",
+      "audio": "4_Nasirun.wav"
+    },
+    {
+      "id": 5,
+      "ar": "مَنْصُورٌ",
+      "latin": "Mensurun",
+      "siyga": "İsm-i Mef'ûl",
+      "tr": "Yardım Olunmuş",
+      "audio": "5_Mensurun.wav"
+    },
+    {
+      "id": 6,
+      "ar": "لَمْيَنْصُرْ",
+      "latin": "Lemyensur",
+      "siyga": "Fiilî Muzârî Cehdî Mutlak",
+      "tr": "Yardım Etmedi",
+      "audio": "6_Lemyensur.wav"
+    },
+    {
+      "id": 7,
+      "ar": "لَمَّيَنْصُرْ",
+      "latin": "Lemmayensur",
+      "siyga": "Fiilî Muzârî Cehdî Müstegrak",
+      "tr": "Henüz Yardım Etmedi",
+      "audio": "7_Lemmayensur.wav"
+    },
+    {
+      "id": 8,
+      "ar": "مَايَنْصُرُ",
+      "latin": "Mayensuru",
+      "siyga": "Fiilî Muzârî Nefî Hal",
+      "tr": "Yardım Etmiyor",
+      "audio": "8_Mayensuru.wav"
+    },
+    {
+      "id": 9,
+      "ar": "لَيَنْصُرُ",
+      "latin": "Layensuru",
+      "siyga": "Fiilî Muzârî Nefî İstikbal",
+      "tr": "Yardım Etmeyecek",
+      "audio": "9_Layensuru.wav"
+    },
+    {
+      "id": 10,
+      "ar": "لَنْيَنْصُرَ",
+      "latin": "Lenyensura",
+      "siyga": "Fiilî Muzârî Te'kîd Nefî İstikbal",
+      "tr": "Elbette Yardım Etmeyecek",
+      "audio": "10_Lenyensura.wav"
+    },
+    {
+      "id": 11,
+      "ar": "لِيَنْصُرْ",
+      "latin": "Liyensur",
+      "siyga": "Emrî Gâ'ib",
+      "tr": "Yardım Etsin",
+      "audio": "11_Liyensur.wav"
+    },
+    {
+      "id": 12,
+      "ar": "لَيَنْصُرْ",
+      "latin": "Layensur",
+      "siyga": "Nehyî Gâ'ib",
+      "tr": "Yardım Etmesin",
+      "audio": "12_Layensur.wav"
+    },
+    {
+      "id": 13,
+      "ar": "اُنْصُرْ",
+      "latin": "Ünsur",
+      "siyga": "Emrî Hazır",
+      "tr": "Yardım Et",
+      "audio": "13_Ünsur.wav"
+    },
+    {
+      "id": 14,
+      "ar": "لاَتَنْصُرْ",
+      "latin": "Latensur",
+      "siyga": "Nehyî Hazır",
+      "tr": "Yardım Etme",
+      "audio": "14_Latensur.wav"
+    },
+    {
+      "id": 15,
+      "ar": "مَنْصَرُنٌ",
+      "latin": "Mensarun",
+      "siyga": "İsm-i Zaman- Yardım Etme Zamanı, İsm-i Mekan- Yardım Etme Mekanı, Mastar Mîmî",
+      "tr": "Yardım Etmek",
+      "audio": "15_Mensarun.wav"
+    },
+    {
+      "id": 16,
+      "ar": "مِنْصَرُنٌ",
+      "latin": "Minsarun",
+      "siyga": "İsm-i Âlet",
+      "tr": "Yardım Aleti",
+      "audio": "16_Minsarun.wav"
+    },
+    {
+      "id": 17,
+      "ar": "نَصْرَةً",
+      "latin": "Nasraten",
+      "siyga": "Mastarî Binâî Merra",
+      "tr": "Bir Kere Yardım Etmek",
+      "audio": "17_Nasraten.wav"
+    },
+    {
+      "id": 18,
+      "ar": "نِصْرَةً",
+      "latin": "Nisraten",
+      "siyga": "Mastarî Binâî Nevî",
+      "tr": "Bir Türle Yardım Etmek",
+      "audio": "18_Nisraten.wav"
+    },
+    {
+      "id": 19,
+      "ar": "نُصَيْرٌ",
+      "latin": "Nusayrun",
+      "siyga": "İsm-i Tasgîr",
+      "tr": "Yardım Etmeçik",
+      "audio": "19_Nusayrun.wav"
+    },
+    {
+      "id": 20,
+      "ar": "نَصْرِيٌّ",
+      "latin": "Nasriyyun",
+      "siyga": "İsm-i Mensup",
+      "tr": "Yardıma Mensup, Ait",
+      "audio": "20_Nasriyyun.wav"
+    },
+    {
+      "id": 21,
+      "ar": "نَصَّارٌ",
+      "latin": "Nassarun",
+      "siyga": "Mübâlagha-Tü İsm-i Fâil",
+      "tr": "Çok Çok Yardım Eden",
+      "audio": "21_Nassarun.wav"
+    },
+    {
+      "id": 22,
+      "ar": "أَنْصَرُ",
+      "latin": "Ensaru",
+      "siyga": "İsm-ü Tafdîl",
+      "tr": "Ziyade Yardım Edici",
+      "audio": "22_Ensaru.wav"
+    },
+    {
+      "id": 23,
+      "ar": "مَا اَنْصَرَهُ",
+      "latin": "Maensarahu",
+      "siyga": "Fiilî Ta'acübî Evvel",
+      "tr": "Acayip Yardım Etti",
+      "audio": "23_Maensarahu.wav"
+    },
+    {
+      "id": 24,
+      "ar": "وَاَنْصِرْ بِهِ",
+      "latin": "Veensirbihî",
+      "siyga": "Fiilî Ta'accübü Sânî",
+      "tr": "Ne Acayip Yardım Etti",
+      "audio": "24_Veensirbihi.wav"
+    }
+  ]
+}

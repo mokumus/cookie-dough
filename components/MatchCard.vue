@@ -1,6 +1,6 @@
 <template>
-  <v-card class="ma-2" :height="height" width="400" :color="color">
-    <v-card-text :class="customClass" :style="`font-size: ${fontSize}`">
+  <v-card class="pa-0 ma-1" height="60" width="400" :color="color">
+    <v-card-text :class="classString" class="cardText">
       {{ item[lang] }}
     </v-card-text>
   </v-card>
@@ -39,27 +39,19 @@ export default {
 
   computed: {
     color() {
-      return this.isMatched ? 'green' : 'yellow'
+      return this.isMatched ? 'green' : 'matchcard'
     },
-
-    height() {
-      return this.isMobile ? '90' : '90'
+    // text center if arabic
+    textAlign() {
+      return this.lang === 'ar' ? 'text-center' : 'text-left'
     },
-
-    customClass() {
-      // center if arabic, right if turkish and isMobile
-      // return this.isMobile ? this.lang === 'ar' ? 'text-center' : 'text-left' : 'text-left'
-      if (this.isMobile) {
-        return this.lang === 'ar' ? 'text-center' : 'text-left font-weight-medium"'
-      } else {
-        return this.lang === 'ar' ? 'text-center' : 'text-center font-weight-medium"'
-      }
-    },
-
+    // bigger font arabic
     fontSize() {
-      // bigger if arabic
-      // both small on mobile
-      return this.lang === 'ar' ? '36px' : '14px'
+      return this.lang === 'ar' ? 'text-h5' : 'font-weight-medium'
+    },
+    // textAlign + fontSize
+    classString() {
+      return `${this.textAlign} ${this.fontSize}`
     },
   },
 
@@ -70,3 +62,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+/* unselectable, no-wrap, scaled on mobile */
+.cardText {
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.5rem;
+  @media (max-width: 960px) {
+    font-size: .8rem;
+  }
+}
+</style>

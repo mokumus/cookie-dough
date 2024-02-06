@@ -1,14 +1,14 @@
 <template>
-  <v-container>
+  <v-container fluid class="pa-0">
     <v-row>
       <v-col cols="6">
-        <v-item-group :selected-class="'bg-primary'" v-model="selectionAr">
+        <v-item-group :selected-class="'selected-match-card'" v-model="selectionAr">
           <v-row v-for="item in shuffledSampleAr" :key="item.id" justify="end" align="end">
-            <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
+            <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)" >
               <MatchCard
                 :item="item"
                 lang="ar"
-                @click="toggle(), handleMatch(item.id, 'ar')"
+                @click="toggle(), handleMatch(item.id, 'ar'), playSound('nasran', item.id)"
                 :class="['d-flex align-center', selectedClass]"
                 :isSelected="isSelected"
                 :isMatched="isMatched(item.id)"
@@ -18,7 +18,7 @@
         </v-item-group>
       </v-col>
       <v-col cols="6">
-        <v-item-group selected-class="bg-primary" v-model="selectionTr">
+        <v-item-group selected-class="selected-match-card" v-model="selectionTr">
           <v-row v-for="item in shuffledSampleTr" :key="item.id" justify="start" align="start">
             <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
               <MatchCard
@@ -62,7 +62,7 @@ export default defineComponent({
   methods: {
     shuffle() {
       // Shuffle the data and get 8 items
-      this.shuffledSampleTr = this.data.sort(() => Math.random() - 0.5).slice(0, 6)
+      this.shuffledSampleTr = this.data.nasran.sort(() => Math.random() - 0.5).slice(0, 6)
       // Shuffle Tr array from a deep copy of the original array
       this.shuffledSampleAr = JSON.parse(JSON.stringify(this.shuffledSampleTr)).sort(() => Math.random() - 0.5)
       this.currentMatches = []
@@ -80,24 +80,33 @@ export default defineComponent({
       }
 
       if (this.itemTr && this.itemAr) {
-        if (this.itemTr === this.itemAr) {
-          this.currentMatches.push(this.itemTr)
-          //  CLEAR SELECTED ITEMS
-          this.selectionTr = null
-          this.selectionAr = null
-        } else {
-          this.itemTr = null
-          this.itemAr = null
-          this.selectionTr = null
-          this.selectionAr = null
-        }
+        if (this.itemTr === this.itemAr) this.currentMatches.push(this.itemTr)
+
+        this.clearSelection()
       }
     },
 
     isMatched(id) {
       return this.currentMatches.includes(id)
     },
+
+    clearSelection() {
+      this.itemTr = null
+      this.itemAr = null
+      this.selectionTr = null
+      this.selectionAr = null
+    },
+    playSound(path, id) {
+      // sounds under public/sounds/path and named as id_*.wav
+
+      const audio = new Audio(`/sounds/${path}/${id}.wav`)
+      audio.play()
+    },
   },
 })
 </script>
->
+<style scoped>
+.selected-match-card {
+  background-color: #C5E1A5 !important;
+}
+</style>

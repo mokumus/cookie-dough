@@ -23,7 +23,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col >
+      <v-col>
         <v-card elevation="10" to="/hadis-english" height="150">
           <v-card-title>
             <h2 class="text-h5">İngilizce Hadis</h2>
