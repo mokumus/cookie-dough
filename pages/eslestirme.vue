@@ -61,10 +61,12 @@ export default defineComponent({
   },
   methods: {
     shuffle() {
+      this.shuffledSampleTr = this.data.nasran
+      this.shuffledSampleAr = this.data.nasran
       // Shuffle the data and get 8 items
-      this.shuffledSampleTr = this.data.nasran.sort(() => Math.random() - 0.5).slice(0, 6)
+      //this.shuffledSampleTr = this.data.nasran.sort(() => Math.random() - 0.5).slice(0, 6)
       // Shuffle Tr array from a deep copy of the original array
-      this.shuffledSampleAr = JSON.parse(JSON.stringify(this.shuffledSampleTr)).sort(() => Math.random() - 0.5)
+      //this.shuffledSampleAr = JSON.parse(JSON.stringify(this.shuffledSampleTr)).sort(() => Math.random() - 0.5)
       this.currentMatches = []
       this.itemTr = null
       this.itemAr = null
