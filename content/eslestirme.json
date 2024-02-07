@@ -116,7 +116,7 @@
       "id": 15,
       "ar": "مَنْصَرُنٌ",
       "latin": "Mensarun",
-      "siyga": "İsm-i Zaman- Yardım Etme Zamanı, İsm-i Mekan- Yardım Etme Mekanı, Mastar Mîmî Yardım Etmek",
+      "siyga": "Yardım Etme Zamanı, Mekanı",
       "tr": "Yardım Etmek",
       "audio": "15_Mensarun.wav"
     },
@@ -125,7 +125,7 @@
       "ar": "مِنْصَرُنٌ",
       "latin": "Minsarun",
       "siyga": "İsm-i Âlet",
-      "tr": "Yardım Aleti",
+      "tr": "Yardım Etme Aleti",
       "audio": "16_Minsarun.wav"
     },
     {
@@ -141,7 +141,7 @@
       "ar": "نِصْرَةً",
       "latin": "Nisraten",
       "siyga": "Mastarî Binâî Nevî",
-      "tr": "Bir Türle Yardım Etmek",
+      "tr": "Bir Türlü Yardım Etmek",
       "audio": "18_Nisraten.wav"
     },
     {
@@ -149,7 +149,7 @@
       "ar": "نُصَيْرٌ",
       "latin": "Nusayrun",
       "siyga": "İsm-i Tasgîr",
-      "tr": "Yardım Etmeçik",
+      "tr": "Yardım Etmecik",
       "audio": "19_Nusayrun.wav"
     },
     {

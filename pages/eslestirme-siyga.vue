@@ -23,7 +23,7 @@
             <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
               <MatchCard
                 :item="item"
-                lang="tr"
+                lang="siyga"
                 @click="toggle(), handleMatch(item.id, 'tr')"
                 :class="['d-flex align-center', selectedClass]"
                 :isSelected="isSelected"

@@ -29,7 +29,7 @@ export default defineNuxtPlugin((app) => {
             secondary: '#0D47A1',
             button: '#ffffff',
             matchcard: '#0288D1',
-            background: '#212121', 
+            background: '#212121',
             indexCard: '#0288D1',
           },
         },

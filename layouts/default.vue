@@ -1,6 +1,10 @@
 <template>
   <v-app :theme="theme">
-    <AppHeader :theme="theme" @updateTheme="updateTheme" :style="{background: $vuetify.theme.themes[theme].background}" />
+    <AppHeader
+      :theme="theme"
+      @updateTheme="updateTheme"
+      :style="{ background: $vuetify.theme.themes[theme].background }"
+    />
     <v-main>
       <v-container>
         <slot />
