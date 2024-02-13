@@ -60,7 +60,7 @@ export default defineComponent({
     return {
       data,
       words: [],
-      currWord: 'nasran',
+      currWord: 'nasara',
       shuffledSampleTr: [],
       shuffledSampleAr: [],
       currentMatches: [],
@@ -114,7 +114,10 @@ export default defineComponent({
       // sounds under public/sounds/path and named as id_*.wav
       console.log('playing sound', path, id)
       // try .wav, .mp3, .ogg
-      const audio = new Audio(`https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.wav`)
+      let fileType = path === 'nasara' ? 'wav' : 'mp3'
+      let src =  `https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.${fileType}`
+      console.log(src)
+      const audio = new Audio(src)
       
       audio.play()
     },
