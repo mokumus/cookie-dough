@@ -80,7 +80,6 @@ export default defineComponent({
   },
   mounted() {
     this.words = Object.keys(this.data)
-    console.log('words', this.words)
     this.shuffle()
   },
   methods: {
@@ -92,6 +91,7 @@ export default defineComponent({
       this.itemAr = null
       this.selectionTr = null
       this.selectionAr = null
+      this.clearSelection()
     },
     handleMatch(id, lang) {
       if (lang === 'tr') {
@@ -102,14 +102,17 @@ export default defineComponent({
       }
 
       if (this.itemTr && this.itemAr) {
-        if (this.itemTr === this.itemAr) this.currentMatches.push(this.itemTr)
+        if (this.itemTr === this.itemAr) {
+          
+          this.currentMatches.push(this.itemTr)
+        }
 
         this.clearSelection()
       }
     },
 
     isMatched(id) {
-      return this.currentMatches.includes(id)
+      return this.currentMatches.includes(parseInt(id))
     },
 
     clearSelection() {
@@ -119,12 +122,8 @@ export default defineComponent({
       this.selectionAr = null
     },
     playSound(path, id) {
-      // sounds under public/sounds/path and named as id_*.wav
-      console.log('playing sound', path, id)
-      // try .wav, .mp3, .ogg
       let fileType = path === 'nasara' ? 'wav' : 'mp3'
       let src = `https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.${fileType}`
-      console.log(src)
       const audio = new Audio(src)
 
       audio.play()
