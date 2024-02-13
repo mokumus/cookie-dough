@@ -1,1 +1,0 @@
-import{f as e,q as t}from"./entry.btmDj1qq.js";const o=e({name:"DocumentDrivenEmpty",props:{value:{type:Object,required:!0}},render:({value:e})=>t("div",void 0,[t("p","Document is empty"),t("p",`Add content to it by opening ${e._source}/${e._file} file.`)])});export{o as default};
