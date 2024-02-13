@@ -4,7 +4,7 @@
       "id": 1,
       "ar": "نَصَرَ",
       "latin": "Nasara",
-      "siyga": "Fiilî Mazî",
+      "siga": "Fiilî Mazî",
       "tr": "Yardım Etti",
       "audio": "1_Nasara.wav"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "ar": "يَنْصُرُ",
       "latin": "Yensuru",
-      "siyga": "Fiilî Muzârî",
+      "siga": "Fiilî Muzârî",
       "tr": "Yardım Ediyor, Eder, Edecek",
       "audio": "2_Yensuru.wav"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "ar": "نَصْرًا",
       "latin": "Nasran",
-      "siyga": "Mastar Gayrî Mîmî",
+      "siga": "Mastar Gayrî Mîmî",
       "tr": "Yardım Etme",
       "audio": "3_Nasran.wav"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "ar": "نَاصِرٌ",
       "latin": "Nasîrun",
-      "siyga": "İsm-i Fâil",
+      "siga": "İsm-i Fâil",
       "tr": "Yardım Edici / Eden",
       "audio": "4_Nasirun.wav"
     },
@@ -36,7 +36,7 @@
       "id": 5,
       "ar": "مَنْصُورٌ",
       "latin": "Mensurun",
-      "siyga": "İsm-i Mef'ûl",
+      "siga": "İsm-i Mef'ûl",
       "tr": "Yardım Olunan",
       "audio": "5_Mensurun.wav"
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "ar": "لَمْيَنْصُرْ",
       "latin": "Lemyensur",
-      "siyga": "Fiilî Muzârî Cehdî Mutlak",
+      "siga": "Fiilî Muzârî Cehdî Mutlak",
       "tr": "Yardım Etmedi",
       "audio": "6_Lemyensur.wav"
     },
@@ -52,7 +52,7 @@
       "id": 7,
       "ar": "لَمَّيَنْصُرْ",
       "latin": "Lemmayensur",
-      "siyga": "Fiilî Muzârî Cehdî Müstegrak",
+      "siga": "Fiilî Muzârî Cehdî Müstegrak",
       "tr": "Henüz Yardım Etmedi",
       "audio": "7_Lemmayensur.wav"
     },
@@ -60,7 +60,7 @@
       "id": 8,
       "ar": "مَايَنْصُرُ",
       "latin": "Mayensuru",
-      "siyga": "Fiilî Muzârî Nefî Hal",
+      "siga": "Fiilî Muzârî Nefî Hal",
       "tr": "Yardım Etmiyor",
       "audio": "8_Mayensuru.wav"
     },
@@ -68,7 +68,7 @@
       "id": 9,
       "ar": "لَيَنْصُرُ",
       "latin": "Layensuru",
-      "siyga": "Fiilî Muzârî Nefî İstikbal",
+      "siga": "Fiilî Muzârî Nefî İstikbal",
       "tr": "Yardım Etmeyecek",
       "audio": "9_Layensuru.wav"
     },
@@ -76,7 +76,7 @@
       "id": 10,
       "ar": "لَنْيَنْصُرَ",
       "latin": "Lenyensura",
-      "siyga": "Fiilî Muzârî Te'kîd Nefî İstikbal",
+      "siga": "Fiilî Muzârî Te'kîd Nefî İstikbal",
       "tr": "Elbette Yardım Etmeyecek",
       "audio": "10_Lenyensura.wav"
     },
@@ -84,7 +84,7 @@
       "id": 11,
       "ar": "لِيَنْصُرْ",
       "latin": "Liyensur",
-      "siyga": "Emrî Gâ'ib",
+      "siga": "Emrî Gâ'ib",
       "tr": "Yardım Etsin",
       "audio": "11_Liyensur.wav"
     },
@@ -92,7 +92,7 @@
       "id": 12,
       "ar": "لَيَنْصُرْ",
       "latin": "Layensur",
-      "siyga": "Nehyî Gâ'ib",
+      "siga": "Nehyî Gâ'ib",
       "tr": "Yardım Etmesin",
       "audio": "12_Layensur.wav"
     },
@@ -100,7 +100,7 @@
       "id": 13,
       "ar": "اُنْصُرْ",
       "latin": "Ünsur",
-      "siyga": "Emrî Hazır",
+      "siga": "Emrî Hazır",
       "tr": "Yardım Et",
       "audio": "13_Ünsur.wav"
     },
@@ -108,7 +108,7 @@
       "id": 14,
       "ar": "لاَتَنْصُرْ",
       "latin": "Latensur",
-      "siyga": "Nehyî Hazır",
+      "siga": "Nehyî Hazır",
       "tr": "Yardım Etme",
       "audio": "14_Latensur.wav"
     },
@@ -116,7 +116,7 @@
       "id": 15,
       "ar": "مَنْصَرُنٌ",
       "latin": "Mensarun",
-      "siyga": "Yardım Etme Zamanı, Mekanı",
+      "siga": "Yardım Etme Zamanı, Mekanı",
       "tr": "Yardım Etmek",
       "audio": "15_Mensarun.wav"
     },
@@ -124,7 +124,7 @@
       "id": 16,
       "ar": "مِنْصَرُنٌ",
       "latin": "Minsarun",
-      "siyga": "İsm-i Âlet",
+      "siga": "İsm-i Âlet",
       "tr": "Yardım Etme Aleti",
       "audio": "16_Minsarun.wav"
     },
@@ -132,7 +132,7 @@
       "id": 17,
       "ar": "نَصْرَةً",
       "latin": "Nasraten",
-      "siyga": "Mastarî Binâî Merra",
+      "siga": "Mastarî Binâî Merra",
       "tr": "Bir Kere Yardım Etmek",
       "audio": "17_Nasraten.wav"
     },
@@ -140,7 +140,7 @@
       "id": 18,
       "ar": "نِصْرَةً",
       "latin": "Nisraten",
-      "siyga": "Mastarî Binâî Nevî",
+      "siga": "Mastarî Binâî Nevî",
       "tr": "Bir Türlü Yardım Etmek",
       "audio": "18_Nisraten.wav"
     },
@@ -148,7 +148,7 @@
       "id": 19,
       "ar": "نُصَيْرٌ",
       "latin": "Nusayrun",
-      "siyga": "İsm-i Tasgîr",
+      "siga": "İsm-i Tasgîr",
       "tr": "Yardım Etmecik",
       "audio": "19_Nusayrun.wav"
     },
@@ -156,7 +156,7 @@
       "id": 20,
       "ar": "نَصْرِيٌّ",
       "latin": "Nasriyyun",
-      "siyga": "İsm-i Mensup",
+      "siga": "İsm-i Mensup",
       "tr": "Yardıma Mensup, Ait",
       "audio": "20_Nasriyyun.wav"
     },
@@ -164,7 +164,7 @@
       "id": 21,
       "ar": "نَصَّارٌ",
       "latin": "Nassarun",
-      "siyga": "Mübâlagha-Tü İsm-i Fâil",
+      "siga": "Mübâlagha-Tü İsm-i Fâil",
       "tr": "Çok Çok Yardım Eden",
       "audio": "21_Nassarun.wav"
     },
@@ -172,7 +172,7 @@
       "id": 22,
       "ar": "أَنْصَرُ",
       "latin": "Ensaru",
-      "siyga": "İsm-ü Tafdîl",
+      "siga": "İsm-ü Tafdîl",
       "tr": "Ziyade Yardım Edici",
       "audio": "22_Ensaru.wav"
     },
@@ -180,7 +180,7 @@
       "id": 23,
       "ar": "مَا اَنْصَرَهُ",
       "latin": "Maensarahu",
-      "siyga": "Fiilî Ta'acübî Evvel",
+      "siga": "Fiilî Ta'acübî Evvel",
       "tr": "Acayip Yardım Etti",
       "audio": "23_Maensarahu.wav"
     },
@@ -188,9 +188,349 @@
       "id": 24,
       "ar": "وَاَنْصِرْ بِهِ",
       "latin": "Veensirbihî",
-      "siyga": "Fiilî Ta'accübü Sânî",
+      "siga": "Fiilî Ta'accübü Sânî",
       "tr": "Ne Acayip Yardım Etti",
       "audio": "24_Veensirbihi.wav"
+    }
+  ],
+  "darabe": [
+    {
+      "id": "1",
+      "ar": "ضَرَبَ",
+      "latin": "Darabe",
+      "tr": "Dövdü",
+      "siga": "Fi’l-i mâzî"
+    },
+    {
+      "id": "2",
+      "ar": "يَضْرِبُ",
+      "latin": "Yedribu",
+      "tr": "Dövüyor,döver,dövecek",
+      "siga": "Fi’l-i muzârî"
+    },
+    {
+      "id": "3",
+      "ar": "ضَرْبًا",
+      "latin": "Darben",
+      "tr": "Dövmek",
+      "siga": "Masdar-ı gayr-i mimî"
+    },
+    {
+      "id": "4",
+      "ar": "ضَارِبٌ",
+      "latin": "Daribun",
+      "tr": "Döven",
+      "siga": "İsm-i fâil"
+    },
+    {
+      "id": "5",
+      "ar": "مَضْرُوبٌ",
+      "latin": "Medrubun",
+      "tr": "Dövülen",
+      "siga": "İsm-i mef’ûl"
+    },
+    {
+      "id": "6",
+      "ar": "لَمْ يَضْرِبْ",
+      "latin": "Lemyedrib",
+      "tr": "Dövmedi",
+      "siga": "Fi’l-i muzârî cahd-i mutlak"
+    },
+    {
+      "id": "7",
+      "ar": "لَمَّ يَضْرِبْ",
+      "latin": "Lemmayedrib",
+      "tr": "Henüz dövmedi",
+      "siga": "Fi’l-i muzârî cahd-i müstağrak"
+    },
+    {
+      "id": "8",
+      "ar": "مَا يَضْرِبُ",
+      "latin": "Mayedribu",
+      "tr": "Dövmüyor",
+      "siga": "Fi’l-i muzârî nefy-i hâl"
+    },
+    {
+      "id": "9",
+      "ar": "لَايَضْرِبُ",
+      "latin": "Layedribu",
+      "tr": "Dövmeyecek",
+      "siga": "Fi’l-i muzârî nefy-i istikbâl"
+    },
+    {
+      "id": "10",
+      "ar": "لَنْ يَضْرِبَ",
+      "latin": "Lenyedribe",
+      "tr": "Elbette dövmeyecek",
+      "siga": "Fi’l-i muzârî te’kîd-i nefy-i istikbâl"
+    },
+    {
+      "id": "11",
+      "ar": "لِيَضْرِبْ",
+      "latin": "Liyedrib",
+      "tr": "Dövsün",
+      "siga": "Emr-i gâib"
+    },
+    {
+      "id": "12",
+      "ar": "لَايَدْرِبْ",
+      "latin": "Layedrib",
+      "tr": "Dövmesin",
+      "siga": "Nehy-i gâib"
+    },
+    {
+      "id": "13",
+      "ar": "اِضْرِبْ",
+      "latin": "İdrib",
+      "tr": "Döv",
+      "siga": "Emr-i hâzır"
+    },
+    {
+      "id": "14",
+      "ar": "لَاتَضْرِبْ",
+      "latin": "Latedrib",
+      "tr": "Dövme",
+      "siga": "Nehy-i hâzır"
+    },
+    {
+      "id": "15",
+      "ar": "مَضْرَبٌ",
+      "latin": "Medrabun",
+      "tr": "Dövme zamanı,mekanı.dövmek",
+      "siga": "İsm-i zaman İsm-i mekânMasdar-ı mimî"
+    },
+    {
+      "id": "16",
+      "ar": "مِضْرَبٌ",
+      "latin": "Midrabun",
+      "tr": "Dövme aleti",
+      "siga": "İsm-i âlet"
+    },
+    {
+      "id": "17",
+      "ar": "ضَرْبَةً",
+      "latin": "Darbeten",
+      "tr": "Bir kere dövmek",
+      "siga": "Masdar binâ-i merra"
+    },
+    {
+      "id": "18",
+      "ar": "ضِرْبَةً",
+      "latin": "Dirbeten",
+      "tr": "Bir türlü dövmek",
+      "siga": "Masdar binâ-i nevi"
+    },
+    {
+      "id": "19",
+      "ar": "ضُرَيْبٌ",
+      "latin": "Dureybun",
+      "tr": "Dövmecik",
+      "siga": "İsm-i tasğîr"
+    },
+    {
+      "id": "20",
+      "ar": "ضَرْبِيٌّ",
+      "latin": "Darbiyyun",
+      "tr": "Dövmeye mensup,ait",
+      "siga": "İsm-i mensûb"
+    },
+    {
+      "id": "21",
+      "ar": "ضَرَّابٌ",
+      "latin": "Darrabun",
+      "tr": "Çok çok döven",
+      "siga": "Mübâlağa-i ism-i fâil"
+    },
+    {
+      "id": "22",
+      "ar": "اَضْرَبُ",
+      "latin": "Edrabu",
+      "tr": "Ziyade dövücü",
+      "siga": "İsm-i tafdîl"
+    },
+    {
+      "id": "23",
+      "ar": "مااَضْرَبَهُ",
+      "latin": "Maedrabehu",
+      "tr": "Acayip dövdü",
+      "siga": "Fi’l-i taaccüb-i evvel"
+    },
+    {
+      "id": "24",
+      "ar": "وَاَضْرِبْبِهِ",
+      "latin": "Veedribbihi",
+      "tr": "Ne acayip dövdü",
+      "siga": "Fi’l-i taaccüb-i sânî"
+    }
+  ],
+  "fetaha": [
+    {
+      "id": "1",
+      "ar": "فَتَحَ",
+      "latin": "Fetaha",
+      "tr": "Açtı",
+      "siga": "Fi’l-i mâzî"
+    },
+    {
+      "id": "2",
+      "ar": "يَفْتَحُ",
+      "latin": "Yeftehu",
+      "tr": "Açıyor,açar,açacak",
+      "siga": "Fi’l-i muzârî"
+    },
+    {
+      "id": "3",
+      "ar": "فَتْحًا",
+      "latin": "Fethan",
+      "tr": "Açmak",
+      "siga": "Masdar-ı gayr-i mimî"
+    },
+    {
+      "id": "4",
+      "ar": "فَاتِحٌ",
+      "latin": "Fatihun",
+      "tr": "Açan",
+      "siga": "İsm-i fâil"
+    },
+    {
+      "id": "5",
+      "ar": "مَفْتُوحٌ",
+      "latin": "Meftuhun",
+      "tr": "Açılan",
+      "siga": "İsm-i mef’ûl"
+    },
+    {
+      "id": "6",
+      "ar": "لَمْ يَفْتَحْ",
+      "latin": "Lewmyefteh",
+      "tr": "Açmadı",
+      "siga": "Fi’l-i muzârî cahd-i mutlak"
+    },
+    {
+      "id": "7",
+      "ar": "لَمَّا يَفْتَحْ",
+      "latin": "Lemmayefteh",
+      "tr": "Henüz açmadı",
+      "siga": "Fi’l-i muzârî cahd-i müstağrak"
+    },
+    {
+      "id": "8",
+      "ar": "مَا يَفْتَحُ",
+      "latin": "Mayeftehu",
+      "tr": "Açmıyor",
+      "siga": "Fi’l-i muzârî nefy-i hâl"
+    },
+    {
+      "id": "9",
+      "ar": "لَيَفْتَحُ",
+      "latin": "Layeftehu",
+      "tr": "Açmayacak",
+      "siga": "Fi’l-i muzârî nefy-i istikbâl"
+    },
+    {
+      "id": "10",
+      "ar": "لَنْ يَفْتَحَ",
+      "latin": "Lenyefteha",
+      "tr": "Elbette açmayacak",
+      "siga": "Fi’l-i muzârî te’kîd-i nefy-i istikbâl"
+    },
+    {
+      "id": "11",
+      "ar": "لِيَفْتَحْ",
+      "latin": "Liyefteh",
+      "tr": "Açsın",
+      "siga": "Emr-i gâib"
+    },
+    {
+      "id": "12",
+      "ar": "لاَيَفْتَحْ",
+      "latin": "Layefteh",
+      "tr": "Açmasın",
+      "siga": "Nehy-i gâib"
+    },
+    {
+      "id": "13",
+      "ar": "اِفْتَحْ",
+      "latin": "İfteh",
+      "tr": "Aç",
+      "siga": "Emr-i hâzır"
+    },
+    {
+      "id": "14",
+      "ar": "لَاتَفْتَحْ",
+      "latin": "Latefteh",
+      "tr": "Açma",
+      "siga": "Nehy-i hâzır"
+    },
+    {
+      "id": "15",
+      "ar": "مَفْتَحٌ",
+      "latin": "Meftehun",
+      "tr": "Açma zamanı,mekanı,açmak",
+      "siga": "İsm-i zaman İsm-i mekânMasdar-ı mimî"
+    },
+    {
+      "id": "16",
+      "ar": "مِفْتَاحٌ",
+      "latin": "Miftahun",
+      "tr": "Açma aleti",
+      "siga": "İsm-i âlet"
+    },
+    {
+      "id": "17",
+      "ar": "فَتْحَةً",
+      "latin": "Fethaten",
+      "tr": "Bir kere açmak",
+      "siga": "Masdar binâ-i merra"
+    },
+    {
+      "id": "18",
+      "ar": "فِتْحَةً",
+      "latin": "Fithaten",
+      "tr": "Bir türlü açmak",
+      "siga": "Masdar binâ-i nevi"
+    },
+    {
+      "id": "19",
+      "ar": "فُتَيْحٌ",
+      "latin": "Füteyhun",
+      "tr": "Açmacık",
+      "siga": "İsm-i tasğîr"
+    },
+    {
+      "id": "20",
+      "ar": "فَتْحِيٌّ",
+      "latin": "Fethiyyun",
+      "tr": "Açmaya mensup,ait",
+      "siga": "İsm-i mensûb"
+    },
+    {
+      "id": "21",
+      "ar": "فَتَّاحٌ",
+      "latin": "Fettahun",
+      "tr": "Çok çok açan",
+      "siga": "Mübâlağa-i ism-i fâil"
+    },
+    {
+      "id": "22",
+      "ar": "اَفْتَحُ",
+      "latin": "Eftehu",
+      "tr": "Ziyade açıcı",
+      "siga": "İsm-i tafdîl"
+    },
+    {
+      "id": "23",
+      "ar": "ماَاَفْتَحَهُ",
+      "latin": "Maeftehahu",
+      "tr": "Acayip açtı",
+      "siga": "Fi’l-i taaccüb-i evvel"
+    },
+    {
+      "id": "24",
+      "ar": "وَاَفْتِحْبِهِ",
+      "latin": "Veeftihbihi",
+      "tr": "Ne acayip açtı",
+      "siga": "Fi’l-i taaccüb-i sânî"
     }
   ]
 }

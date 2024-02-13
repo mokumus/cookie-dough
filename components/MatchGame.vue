@@ -1,5 +1,6 @@
 <template>
   <v-container fluid class="pa-0">
+    <v-row> </v-row>
     <v-row>
       <v-col cols="6">
         <v-item-group :selected-class="'selected-match-card'" v-model="selectionAr">
@@ -8,7 +9,7 @@
               <MatchCard
                 :item="item"
                 lang="ar"
-                @click="toggle(), handleMatch(item.id, 'ar'), playSound('nasara', item.id)"
+                @click="toggle(), handleMatch(item.id, 'ar'), playSound(currWord, item.id)"
                 :class="['d-flex align-center', selectedClass]"
                 :isSelected="isSelected"
                 :isMatched="isMatched(item.id)"
@@ -23,7 +24,7 @@
             <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
               <MatchCard
                 :item="item"
-                lang="siyga"
+                :lang="matchBy"
                 @click="toggle(), handleMatch(item.id, 'tr')"
                 :class="['d-flex align-center', selectedClass]"
                 :isSelected="isSelected"
@@ -34,8 +35,13 @@
         </v-item-group>
       </v-col>
     </v-row>
-    <v-row class="mt-5" justify="center" align="center">
-      <v-btn color="primary" size="large" @click="shuffle">Yenile</v-btn>
+    <v-row class="mt-5">
+      <v-col align="center">
+        <v-btn color="primary" size="large" @click="shuffle">Yenile</v-btn>
+      </v-col>
+      <v-col  align="center">
+        <v-select class="select" bg-color="select" variant="solo-filled" v-model="currWord" :items="words" density="compact" @update:modelValue="shuffle()"></v-select>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -44,9 +50,17 @@
 import data from '../content/eslestirme.json'
 
 export default defineComponent({
+  props: {
+    matchBy: String,
+    required: false,
+    default: 'tr',
+  },
+
   data() {
     return {
       data,
+      words: [],
+      currWord: 'nasran',
       shuffledSampleTr: [],
       shuffledSampleAr: [],
       currentMatches: [],
@@ -57,13 +71,13 @@ export default defineComponent({
     }
   },
   mounted() {
+    this.words = Object.keys(this.data)
+    console.log('words', this.words)
     this.shuffle()
   },
   methods: {
     shuffle() {
-      // Shuffle the data and get 8 items
-      this.shuffledSampleTr = this.data.nasran.sort(() => Math.random() - 0.5).slice(0, 6)
-      // Shuffle Tr array from a deep copy of the original array
+      this.shuffledSampleTr = this.data[this.currWord].sort(() => Math.random() - 0.5).slice(0, 6)
       this.shuffledSampleAr = JSON.parse(JSON.stringify(this.shuffledSampleTr)).sort(() => Math.random() - 0.5)
       this.currentMatches = []
       this.itemTr = null
@@ -99,7 +113,9 @@ export default defineComponent({
     playSound(path, id) {
       // sounds under public/sounds/path and named as id_*.wav
       console.log('playing sound', path, id)
+      // try .wav, .mp3, .ogg
       const audio = new Audio(`https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.wav`)
+      
       audio.play()
     },
   },
@@ -108,5 +124,8 @@ export default defineComponent({
 <style scoped>
 .selected-match-card {
   background-color: #c5e1a5 !important;
+}
+.select {
+  width: 150px !important;
 }
 </style>

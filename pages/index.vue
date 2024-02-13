@@ -19,7 +19,7 @@ export default {
     return {
       cards: [
         { title: 'Emsile (Fiil Eşleştirme)', link: '/eslestirme', description: 'Arapça alıştırma' },
-        { title: 'Emsile (Siga)', link: '/eslestirme-siyga', description: 'Arapça alıştırma' },
+        { title: 'Emsile (Siga)', link: '/eslestirme-siga', description: 'Arapça alıştırma' },
         { title: 'Hadisler', link: '/hadis', description: 'Kütüb-i Sitte' },
         { title: 'İngilizce Hadis', link: '/hadis-english', description: 'İmam Buhari, İmam Müslim, Ebu Davud, Tirmizi, Nesai, İbn Mace' },
       ],

@@ -20,6 +20,7 @@ export default defineNuxtPlugin((app) => {
             matchcard: '#0288D1',
             background: '#C8E6C9',
             indexCard: '#81C784',
+            select: '#81C784',
           },
         },
         dark: {
@@ -31,6 +32,7 @@ export default defineNuxtPlugin((app) => {
             matchcard: '#0288D1',
             background: '#212121',
             indexCard: '#0288D1',
+            select: '#26A69A',
           },
         },
       },
