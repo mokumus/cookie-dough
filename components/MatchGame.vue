@@ -35,12 +35,20 @@
         </v-item-group>
       </v-col>
     </v-row>
-    <v-row class="mt-5">
-      <v-col align="center">
+    <v-row justify="center">
+      <v-col align="end">
         <v-btn color="primary" size="large" @click="shuffle">Yenile</v-btn>
       </v-col>
-      <v-col  align="center">
-        <v-select class="select" bg-color="select" variant="solo-filled" v-model="currWord" :items="words" density="compact" @update:modelValue="shuffle()"></v-select>
+      <v-col align="start">
+        <v-select
+          class="select"
+          bg-color="select"
+          variant="solo-filled"
+          v-model="currWord"
+          :items="words"
+          density="compact"
+          @update:modelValue="shuffle()"
+        ></v-select>
       </v-col>
     </v-row>
   </v-container>
@@ -115,10 +123,10 @@ export default defineComponent({
       console.log('playing sound', path, id)
       // try .wav, .mp3, .ogg
       let fileType = path === 'nasara' ? 'wav' : 'mp3'
-      let src =  `https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.${fileType}`
+      let src = `https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.${fileType}`
       console.log(src)
       const audio = new Audio(src)
-      
+
       audio.play()
     },
   },
