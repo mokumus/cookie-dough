@@ -1,0 +1,1 @@
+import{_ as t}from"./MatchGame.BySUDtXL.js";import{_ as r,f as o,o as s}from"./entry.GAvh6Y-T.js";import"./VRow.HhGjlc7w.js";import"./VContainer.5BkyH2hZ.js";import"./VBtn.xulGV3AK.js";import"./VDivider.4D9bqpqO.js";const a=r({},[["render",function(r,a){const i=t;return s(),o(i,{matchBy:"siga"})}]]);export{a as default};
