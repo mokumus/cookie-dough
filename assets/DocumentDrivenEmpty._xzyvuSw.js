@@ -1,1 +1,0 @@
-import{an as e,ar as t}from"./entry.GAvh6Y-T.js";const n=e({name:"DocumentDrivenEmpty",props:{value:{type:Object,required:!0}},render:({value:e})=>t("div",void 0,[t("p","Document is empty"),t("p",`Add content to it by opening ${e._source}/${e._file} file.`)])});export{n as default};
