@@ -122,7 +122,7 @@ export default defineComponent({
       this.selectionAr = null
     },
     playSound(path, id) {
-      let fileType = path === 'nasara' ? 'wav' : 'mp3'
+      let fileType = 'wav'
       let src = `https://github.com/mokumus/cookie-dough/raw/master/public/sounds/${path}/${id}.${fileType}`
       const audio = new Audio(src)
 
