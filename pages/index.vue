@@ -26,6 +26,7 @@ export default {
           link: '/hadis-english',
           description: 'İmam Buhari, İmam Müslim, Ebu Davud, Tirmizi, Nesai, İbn Mace',
         },
+        { title: 'Kelimeler', link: '/kelimeler', description: 'Alıştırmada çıkan kelimeler...'}
       ],
       indexCardColor: 'indexCard', // Assuming this color is defined in your theme
     }
