@@ -3,7 +3,7 @@
     <v-row> </v-row>
     <v-row>
       <v-col cols="6">
-        <v-item-group :selected-class="'selected-match-card'" v-model="selectionAr">
+        <v-item-group :selected-class="'selected-match-card'" v-model="selectionAr" :key="selectionAr">
           <v-row v-for="item in shuffledSampleAr" :key="item.id" justify="end" align="end">
             <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
               <MatchCard
@@ -19,7 +19,7 @@
         </v-item-group>
       </v-col>
       <v-col cols="6">
-        <v-item-group selected-class="selected-match-card" v-model="selectionTr">
+        <v-item-group selected-class="selected-match-card" v-model="selectionTr" :key="selectionTr">
           <v-row v-for="item in shuffledSampleTr" :key="item.id" justify="start" align="start">
             <v-item v-slot="{ isSelected, selectedClass, toggle }" :disabled="isMatched(item.id)">
               <MatchCard
@@ -74,8 +74,8 @@ export default defineComponent({
       currentMatches: [],
       itemTr: null,
       itemAr: null,
-      selectionTr: null,
-      selectionAr: null,
+      selectionTr: [],
+      selectionAr: [],
     }
   },
   mounted() {
@@ -89,8 +89,8 @@ export default defineComponent({
       this.currentMatches = []
       this.itemTr = null
       this.itemAr = null
-      this.selectionTr = null
-      this.selectionAr = null
+      this.selectionTr = []
+      this.selectionAr = []
       this.clearSelection()
     },
     handleMatch(id, lang) {
@@ -118,8 +118,8 @@ export default defineComponent({
     clearSelection() {
       this.itemTr = null
       this.itemAr = null
-      this.selectionTr = null
-      this.selectionAr = null
+      this.selectionTr = []
+      this.selectionAr = []
     },
     playSound(path, id) {
       let fileType = 'wav'
