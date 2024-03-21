@@ -1,1 +1,0 @@
-import{_ as t}from"./MatchGame.TZ_dqLQX.js";import{_ as r,f as o,o as s}from"./entry.TupQF43T.js";import"./VRow.wXAVKl5n.js";import"./VContainer.P3mZ-4Qa.js";import"./VBtn.sAYK6AI6.js";import"./VDivider.HFkUXNXv.js";const a=r({},[["render",function(r,a){const i=t;return s(),o(i,{matchBy:"tr"})}]]);export{a as default};
