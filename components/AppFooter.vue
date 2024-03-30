@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="text-center d-flex flex-column" app absolute color="primary">
+  <v-footer class="text-center d-flex flex-column" app  color="primary">
     <div>
       <!-- redirect to href -->
       <v-btn
@@ -11,10 +11,17 @@
         :href="item.href"
         target="_blank"
       ></v-btn>
+      <v-btn
+      icon
+      flat
+      color="transparent"
+      @click="scrollToTop"
+    >
+      <v-icon>mdi-arrow-up</v-icon>
+    </v-btn>
     </div>
-    <v-divider></v-divider>
+    <!-- scroll to top -->
 
-    <div>{{ new Date().getFullYear() }} — <strong>mokumus</strong></div>
   </v-footer>
 </template>
 
@@ -24,8 +31,17 @@ export default {
     items: [
       { icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/muhammed-okumu%C5%9F-26b5b71aa/' },
       { icon: 'mdi-github', href: 'https://github.com/mokumus/cookie-dough' },
+
     ],
     randomQuote: null,
   }),
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
+    },
+  },
 }
 </script>
