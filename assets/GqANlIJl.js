@@ -1,1 +1,0 @@
-import{j as t,aU as e}from"./Da5_caoE.js";const a=t({__name:"ProseCode",props:{code:{type:String,default:""},language:{type:String,default:null},filename:{type:String,default:null},highlights:{type:Array,default:()=>[]},meta:{type:String,default:null}},setup:t=>(t,a)=>e(t.$slots,"default")});export{a as _};
