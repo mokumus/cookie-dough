@@ -1,1 +1,0 @@
-import{_ as s}from"./CLGhp1KM.js";import{_ as o,f as r,o as t}from"./l2oLX_Kz.js";import"./CKJvMOID.js";import"./KUN8Siis.js";import"./pWPhCvPe.js";import"./CFtpcmhM.js";import"./CowADRx-.js";import"./WzL1ahKq.js";import"./DvUQU3Y2.js";const m=o({},[["render",function(o,m){const i=s;return t(),r(i,{matchBy:"siga"})}]]);export{m as default};
