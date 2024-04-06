@@ -59,6 +59,10 @@ export default defineComponent({
       // capitilize and remove underscore
       return s[0].toUpperCase() + s.slice(1).replace(/_/g, ' ')
     },
+
+    remove_underline(s) {
+      return s.replace(/_/g, ' ')
+    },
     get_gender_color(str) {
       // Müennes = dişi
       // Müzekker = erkek
