@@ -1,0 +1,1 @@
+import{j as t,aQ as e}from"./CCE4Rgz6.js";const a=t({__name:"ProseCode",props:{code:{type:String,default:""},language:{type:String,default:null},filename:{type:String,default:null},highlights:{type:Array,default:()=>[]},meta:{type:String,default:null}},setup:t=>(t,a)=>e(t.$slots,"default")});export{a as _};
