@@ -26,7 +26,8 @@ export default {
           link: '/hadis-english',
           description: 'İmam Buhari, İmam Müslim, Ebu Davud, Tirmizi, Nesai, İbn Mace',
         },
-        { title: 'Kelimeler', link: '/kelimeler', description: 'Alıştırmada çıkan kelimeler...'}
+        { title: 'Emsile-i Muhtelife', link: '/muhtelife', description: 'Emsile-i Muhtelife kelimesi, Osmanlı Devleti döneminde kullanılan Türkçe kelimeyi ifade eder. Arap alfabesiyle yazılan Emsile-i Muhtelife Osmanlı Türkçesi kelimesi, o dönemin resmi ve edebi dilinde kullanılan kelimeyi göstermektedir.'},
+        { title: 'Emsile-i Muttaride', link: '/muttaride', description: 'Asıl harfleri bir ve şekilleri farklı olup, bir birine benzeyen sigalara denir. Muttaride fiiller malum ve meçhul olmak üzere iki kısma ayrılır.'}
       ],
       indexCardColor: 'indexCard', // Assuming this color is defined in your theme
     }
