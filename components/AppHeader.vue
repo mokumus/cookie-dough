@@ -27,6 +27,15 @@
           <v-list-item-subtitle>{{ item.description }}</v-list-item-subtitle>
         </v-list-item>
       </v-list>
+      <!---- nav footer with version-->
+  
+      <v-footer app>
+        <v-row justify="center" class="mb-n16">
+          Version: {{ version }}
+        </v-row>
+
+      </v-footer>
+      
     </v-navigation-drawer>
   </v-container>
 </template>
@@ -41,6 +50,7 @@ export default defineComponent({
   },
   data() {
     return {
+      version: '0.0.0',
       drawer: false,
       items: [
         { title: 'Ana Sayfa', link: '/', description: 'Ana sayfa', icon: 'mdi-home' },
@@ -76,6 +86,21 @@ export default defineComponent({
         },
       ],
     }
+  },
+  mounted() {
+    this.getVersion()
+  },
+  methods: {
+    async getVersion() {
+      try {
+        const response = await fetch('/api/version') // Replace with actual API endpoint URL if needed
+        const data = await response.json()
+        this.version = data.version; // Update your version data with the response
+      } catch (error) {
+        console.error('Error fetching version:', error)
+        // Handle errors appropriately, like displaying an error message
+      }
+    },
   },
 })
 </script>

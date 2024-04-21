@@ -47,4 +47,11 @@ export default defineNuxtConfig({
       apiBase: '/api',
     },
   },
+  routeRules: {
+    '/api/**': {
+      prerender: false,
+      ssr: false,
+      proxy: process.env.BASE_URL + "/api/**",
+    },
+  },
 })
