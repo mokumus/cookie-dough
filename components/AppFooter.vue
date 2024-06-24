@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="text-center d-flex flex-column" app  color="primary">
+  <v-footer class="text-center d-flex flex-column"  :app="!isMobile" color="primary">
     <div>
       <!-- redirect to href -->
       <v-btn
@@ -27,6 +27,12 @@
 
 <script>
 export default {
+  props: {
+    isMobile: {
+      type: Boolean,
+      required: true,
+    },
+  },
   data: () => ({
     items: [
       { icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/muhammed-okumu%C5%9F-26b5b71aa/' },
